@@ -331,60 +331,61 @@ private void btnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
 
 private void btnJalankanDekripsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJalankanDekripsiActionPerformed
 // TODO add your handling code here:
-    if (gbr1==null || gbr2==null)
+    if (gbr1==null && gbr2==null)
     {
           JOptionPane.showMessageDialog(null, "You have not chosen image!","Warning",JOptionPane.WARNING_MESSAGE);
-    }else{
-    if (jrbtnMetodeAT.isSelected()) 
+    }else
     {
-     int a = Integer.parseInt(jtxtk1.getText());
-     int b = Integer.parseInt(jtxtk2.getText());
-     
-     Affine affine  = new Affine(a,b);
-     affine.decrypt(gbr1.getPixelAsli());
- //   affine.decrypt(affine.getResult());
-    gbr1.setPixeloutput(affine.getResult());
-    ImageViewer imgv = new ImageViewer();
-    imgv.setImage(gbr1);
-    imgv.setViewer(jlblDekripsiTransformAffine);
-    imgv.viewImageOutput();
-    btnSimpanGambar.setEnabled(true);
-    }else if (jrbtnMetodeATAHC.isSelected()){
-    
+        if (jrbtnMetodeAT.isSelected()) 
+        {
             int a = Integer.parseInt(jtxtk1.getText());
-     int b = Integer.parseInt(jtxtk2.getText());
-        
-    int seed = Integer.parseInt(jtxtSeed.getText());
-    int k = Integer.parseInt(jtxtD.getText());
-    int multiplier = Integer.parseInt(jtxtMultiplier.getText());  
+            int b = Integer.parseInt(jtxtk2.getText());
 
-     HillCipher hc = new HillCipher(seed,k, multiplier,gbr2.getWidth());   
-     int pixels[][] =null;
-     for(int r=0;r<16;r++) 
-     {
-       pixels = gbr2.getPixelOutput();
-      
-       for(int i=0;i<pixels.length;i++)
-       {
-              int vecplain[] = Matrix.getVecOfRow(pixels, i);
-              Permutation.runIPermutate(vecplain); 
-              int cipher[] = hc.decrypt(vecplain);             
-              gbr2.setPixelOutput(i, cipher);
-       }
-     }
-     
-    ImageViewer imgv = new ImageViewer();
-    
-    Affine affine  = new Affine(a,b);
-    affine.decrypt(gbr2.getPixelOutput());
-    gbr2.setPixeloutput(affine.getResult());    
-    imgv.setImage(gbr2);
-    imgv.setViewer(jlblDekripsiAffineHillCipher);
-    imgv.viewImageOutput();
-    btnSimpanGambar.setEnabled(true);
-    }else {
-         JOptionPane.showMessageDialog(null, "You have not chosen Decryption Method!","Warning",JOptionPane.WARNING_MESSAGE);
-    }
+            Affine affine  = new Affine(a,b);
+            affine.decrypt(gbr1.getPixelAsli());
+        //   affine.decrypt(affine.getResult());
+            gbr1.setPixeloutput(affine.getResult());
+            ImageViewer imgv = new ImageViewer();
+            imgv.setImage(gbr1);
+            imgv.setViewer(jlblDekripsiTransformAffine);
+            imgv.viewImageOutput();
+            btnSimpanGambar.setEnabled(true);
+        }else if (jrbtnMetodeATAHC.isSelected()){
+
+            int a = Integer.parseInt(jtxtk1.getText());
+            int b = Integer.parseInt(jtxtk2.getText());
+
+            int seed = Integer.parseInt(jtxtSeed.getText());
+            int k = Integer.parseInt(jtxtD.getText());
+            int multiplier = Integer.parseInt(jtxtMultiplier.getText());  
+
+            HillCipher hc = new HillCipher(seed,k, multiplier,gbr2.getWidth());   
+            int pixels[][] =null;
+            for(int r=0;r<16;r++) 
+            {
+              pixels = gbr2.getPixelOutput();
+
+              for(int i=0;i<pixels.length;i++)
+              {
+                     int vecplain[] = Matrix.getVecOfRow(pixels, i);
+                     Permutation.runIPermutate(vecplain); 
+                     int cipher[] = hc.decrypt(vecplain);             
+                     gbr2.setPixelOutput(i, cipher);
+              }
+            }
+
+            ImageViewer imgv = new ImageViewer();
+
+            Affine affine  = new Affine(a,b);
+            affine.decrypt(gbr2.getPixelOutput());
+            gbr2.setPixeloutput(affine.getResult());    
+            imgv.setImage(gbr2);
+            imgv.setViewer(jlblDekripsiAffineHillCipher);
+            imgv.viewImageOutput();
+            btnSimpanGambar.setEnabled(true);
+        }else {
+             JOptionPane.showMessageDialog(null, "You have not chosen Decryption Method!","Warning",JOptionPane.WARNING_MESSAGE);
+        }
     }
 }//GEN-LAST:event_btnJalankanDekripsiActionPerformed
 public void saveFirstPicOutput() 
