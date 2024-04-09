@@ -130,24 +130,24 @@ public class SecurityAnalysis {
             int w1 = rand.nextInt(width);
             int h1 = rand.nextInt(height-1);
                 
-            x[i] = pxl[w1][h1];
-            y[i] = pxl[w1][h1+1];            
+            x[i] = pxl[h1][w1];
+            y[i] = pxl[h1][w1+1];            
 
             }
             else if(sample.equals("vertical")){
             int w1 = rand.nextInt(width-1);
             int h1 = rand.nextInt(height);
                 
-            x[i] = pxl[w1][h1];
-            y[i] = pxl[w1+1][h1];    
+            x[i] = pxl[h1][w1];
+            y[i] = pxl[h1+1][w1];    
             
             }
             else{
             int w1 = rand.nextInt(width-1);
             int h1 = rand.nextInt(height-1);
 
-            x[i] = pxl[w1][h1];
-            y[i] = pxl[w1+1][h1+1];                       
+            x[i] = pxl[h1][w1];
+            y[i] = pxl[h1+1][w1+1];                       
             }
             totalX += x[i];
             totalY += y[i];
