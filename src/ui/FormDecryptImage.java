@@ -333,7 +333,7 @@ private void btnJalankanDekripsiActionPerformed(java.awt.event.ActionEvent evt) 
 // TODO add your handling code here:
     if (gbr1==null || gbr2==null)
     {
-          JOptionPane.showMessageDialog(null, "Anda Belum Memilih Gambar!","Peringatan",JOptionPane.WARNING_MESSAGE);
+          JOptionPane.showMessageDialog(null, "You have not chosen image!","Warning",JOptionPane.WARNING_MESSAGE);
     }else{
     if (jrbtnMetodeAT.isSelected()) 
     {
@@ -383,7 +383,7 @@ private void btnJalankanDekripsiActionPerformed(java.awt.event.ActionEvent evt) 
     imgv.viewImageOutput();
     btnSimpanGambar.setEnabled(true);
     }else {
-         JOptionPane.showMessageDialog(null, "Anda Belum Memilih Metode Dekripsi!","Peringatan",JOptionPane.WARNING_MESSAGE);
+         JOptionPane.showMessageDialog(null, "You have not chosen Decryption Method!","Warning",JOptionPane.WARNING_MESSAGE);
     }
     }
 }//GEN-LAST:event_btnJalankanDekripsiActionPerformed
@@ -418,7 +418,7 @@ public void saveFirstPicOutput()
              {
                   ImageIO.write(bf, "bmp", outputfile);
              }
-             JOptionPane.showMessageDialog(null, "Citra Hasil Enkripsi Berhasil disimpan!");
+             JOptionPane.showMessageDialog(null, "Plain image successfully saved!");
             }catch(IOException e){
                  
             }
@@ -456,7 +456,7 @@ public void saveSecondPicOutput() {
              {
                   ImageIO.write(bf, "bmp", outputfile);
              }
-             JOptionPane.showMessageDialog(null, "Citra Hasil Enkripsi Berhasil disimpan!");
+             JOptionPane.showMessageDialog(null, "Plain image successfully saved!");
             }catch(IOException e){
                  
             }
