@@ -83,14 +83,14 @@ public class FormDecryptImage extends javax.swing.JFrame {
         jlblDekripsiAffineHillCipher = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Form Dekripsi");
+        setTitle("Decryption Form");
 
         panelYellow1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jlblGambarUji1.setForeground(new java.awt.Color(255, 255, 255));
         jlblGambarUji1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblGambarUji1.setText("Klik Untuk Membuka Gambar Hasil Transformasi Affine");
-        jlblGambarUji1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblGambarUji1.setText("Browse Affine Transform Cipher");
+        jlblGambarUji1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jlblGambarUji1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jlblGambarUji1MouseClicked(evt);
@@ -99,8 +99,8 @@ public class FormDecryptImage extends javax.swing.JFrame {
 
         jlblGambarUji2.setForeground(new java.awt.Color(255, 255, 255));
         jlblGambarUji2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblGambarUji2.setText("Klik Untuk Membuka Gambar Hasil Transformasi Affine");
-        jlblGambarUji2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblGambarUji2.setText("Browse Advance HC Cipher");
+        jlblGambarUji2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jlblGambarUji2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jlblGambarUji2MouseClicked(evt);
@@ -171,7 +171,7 @@ public class FormDecryptImage extends javax.swing.JFrame {
 
         panelYellow2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 250, 70));
 
-        btnJalankanDekripsi.setText("Jalankan Dekripsi");
+        btnJalankanDekripsi.setText("Run Decryption");
         btnJalankanDekripsi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJalankanDekripsiActionPerformed(evt);
@@ -179,7 +179,7 @@ public class FormDecryptImage extends javax.swing.JFrame {
         });
         panelYellow2.add(btnJalankanDekripsi, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 250, 39));
 
-        btnSimpanGambar.setText("Simpan Gambar ");
+        btnSimpanGambar.setText("Save Image");
         btnSimpanGambar.setEnabled(false);
         btnSimpanGambar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,7 +189,7 @@ public class FormDecryptImage extends javax.swing.JFrame {
         panelYellow2.add(btnSimpanGambar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 250, 39));
 
         btnKeluar.setForeground(new java.awt.Color(255, 255, 255));
-        btnKeluar.setText("Keluar");
+        btnKeluar.setText("Exit");
         btnKeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKeluarActionPerformed(evt);
@@ -197,10 +197,10 @@ public class FormDecryptImage extends javax.swing.JFrame {
         });
         panelYellow2.add(btnKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 250, 46));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("METODE");
+        jLabel1.setText("METHODS");
         panelYellow2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 37, 98, -1));
 
         buttonGroup1.add(jrbtnMetodeAT);
@@ -268,13 +268,13 @@ public class FormDecryptImage extends javax.swing.JFrame {
 
         jlblDekripsiTransformAffine.setForeground(new java.awt.Color(255, 255, 255));
         jlblDekripsiTransformAffine.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblDekripsiTransformAffine.setText("Hasil Dekripsi Transformasi Affine");
-        jlblDekripsiTransformAffine.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblDekripsiTransformAffine.setText("Affine Transform Decryption Result");
+        jlblDekripsiTransformAffine.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
         jlblDekripsiAffineHillCipher.setForeground(new java.awt.Color(255, 255, 255));
         jlblDekripsiAffineHillCipher.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jlblDekripsiAffineHillCipher.setText("Hasil Dekripsi Affine + Advanced Hill Cipher");
-        jlblDekripsiAffineHillCipher.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblDekripsiAffineHillCipher.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
         javax.swing.GroupLayout panelYellow3Layout = new javax.swing.GroupLayout(panelYellow3);
         panelYellow3.setLayout(panelYellow3Layout);
@@ -284,7 +284,7 @@ public class FormDecryptImage extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(panelYellow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jlblDekripsiAffineHillCipher, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jlblDekripsiTransformAffine, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE))
+                    .addComponent(jlblDekripsiTransformAffine, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         panelYellow3Layout.setVerticalGroup(

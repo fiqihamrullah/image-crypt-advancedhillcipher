@@ -81,7 +81,7 @@ public class FormEncryptImage extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Form Enkripsi");
+        setTitle("Encryption Form");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -97,11 +97,11 @@ public class FormEncryptImage extends javax.swing.JFrame {
 
         jlblGambarUji.setForeground(new java.awt.Color(255, 255, 255));
         jlblGambarUji.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblGambarUji.setText("Pilih Browse Untuk Membuka 'Gambar'");
-        jlblGambarUji.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblGambarUji.setText("Click Browse to Load Image");
+        jlblGambarUji.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         btnKeluar.setForeground(new java.awt.Color(255, 255, 255));
-        btnKeluar.setText("Keluar");
+        btnKeluar.setText("Exit");
         btnKeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKeluarActionPerformed(evt);
@@ -229,14 +229,16 @@ public class FormEncryptImage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnJalankanEnkripsi.setText("Jalankan Enkripsi");
+        btnJalankanEnkripsi.setForeground(new java.awt.Color(255, 255, 255));
+        btnJalankanEnkripsi.setText("Run Encryption");
         btnJalankanEnkripsi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJalankanEnkripsiActionPerformed(evt);
             }
         });
 
-        btnSimpanGambar.setText("Simpan Gambar");
+        btnSimpanGambar.setForeground(new java.awt.Color(255, 255, 255));
+        btnSimpanGambar.setText("Save Ciphered Image");
         btnSimpanGambar.setEnabled(false);
         btnSimpanGambar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -247,7 +249,7 @@ public class FormEncryptImage extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("METODE");
+        jLabel1.setText("METHODS");
 
         bgmetode.add(jrbtnMetodeAT);
         jrbtnMetodeAT.setForeground(new java.awt.Color(255, 255, 255));
@@ -306,13 +308,13 @@ public class FormEncryptImage extends javax.swing.JFrame {
 
         jlblHasilEnkripsi.setForeground(new java.awt.Color(255, 255, 255));
         jlblHasilEnkripsi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblHasilEnkripsi.setText("Hasil Enkripsi");
-        jlblHasilEnkripsi.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblHasilEnkripsi.setText("Encryption Result");
+        jlblHasilEnkripsi.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("HASIL");
+        jLabel2.setText("RESULT");
 
         javax.swing.GroupLayout panelYellow3Layout = new javax.swing.GroupLayout(panelYellow3);
         panelYellow3.setLayout(panelYellow3Layout);

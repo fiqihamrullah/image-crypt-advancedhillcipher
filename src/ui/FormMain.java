@@ -35,24 +35,30 @@ public class FormMain extends javax.swing.JFrame {
         btnShowSecurityAnalisis = new ui.ButtonGlass();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Menu Utama");
+        setTitle("Main Menu ");
         setResizable(false);
 
-        btnEnkripsiGambar.setText("Enkripsi Gambar");
+        btnEnkripsiGambar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEnkripsiGambar.setText("Encrypt Image");
+        btnEnkripsiGambar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnEnkripsiGambar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEnkripsiGambarActionPerformed(evt);
             }
         });
 
-        btnDekripsiGambar.setText("Dekripsi Gambar");
+        btnDekripsiGambar.setForeground(new java.awt.Color(255, 255, 255));
+        btnDekripsiGambar.setText("Decrypt Image");
+        btnDekripsiGambar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDekripsiGambar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDekripsiGambarActionPerformed(evt);
             }
         });
 
-        btnShowSecurityAnalisis.setText("Analisa Keamanan");
+        btnShowSecurityAnalisis.setForeground(new java.awt.Color(255, 255, 255));
+        btnShowSecurityAnalisis.setText("Security Analysis");
+        btnShowSecurityAnalisis.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnShowSecurityAnalisis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnShowSecurityAnalisisActionPerformed(evt);
@@ -64,13 +70,13 @@ public class FormMain extends javax.swing.JFrame {
         panelYellow1Layout.setHorizontalGroup(
             panelYellow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelYellow1Layout.createSequentialGroup()
-                .addGap(85, 85, 85)
-                .addComponent(btnEnkripsiGambar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(btnDekripsiGambar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
-                .addComponent(btnShowSecurityAnalisis, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addGap(66, 66, 66)
+                .addComponent(btnEnkripsiGambar, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnDekripsiGambar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnShowSecurityAnalisis, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(85, Short.MAX_VALUE))
         );
         panelYellow1Layout.setVerticalGroup(
             panelYellow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

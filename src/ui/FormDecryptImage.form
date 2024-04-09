@@ -7,7 +7,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
-    <Property name="title" type="java.lang.String" value="Form Dekripsi"/>
+    <Property name="title" type="java.lang.String" value="Decryption Form"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -95,10 +95,12 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Klik Untuk Membuka Gambar Hasil Transformasi Affine"/>
+            <Property name="text" type="java.lang.String" value="Browse Affine Transform Cipher"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
           </Properties>
@@ -112,10 +114,12 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Klik Untuk Membuka Gambar Hasil Transformasi Affine"/>
+            <Property name="text" type="java.lang.String" value="Browse Advance HC Cipher"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
           </Properties>
@@ -203,7 +207,7 @@
         </Container>
         <Component class="ui.ButtonGlass" name="btnJalankanDekripsi">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Jalankan Dekripsi"/>
+            <Property name="text" type="java.lang.String" value="Run Decryption"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnJalankanDekripsiActionPerformed"/>
@@ -216,7 +220,7 @@
         </Component>
         <Component class="ui.ButtonGlass" name="btnSimpanGambar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Simpan Gambar "/>
+            <Property name="text" type="java.lang.String" value="Save Image"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -233,7 +237,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Keluar"/>
+            <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKeluarActionPerformed"/>
@@ -253,7 +257,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="METODE"/>
+            <Property name="text" type="java.lang.String" value="METHODS"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -421,10 +425,12 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Hasil Dekripsi Transformasi Affine"/>
+            <Property name="text" type="java.lang.String" value="Affine Transform Decryption Result"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
           </Properties>
@@ -438,7 +444,9 @@
             <Property name="text" type="java.lang.String" value="Hasil Dekripsi Affine + Advanced Hill Cipher"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
           </Properties>

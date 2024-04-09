@@ -85,7 +85,7 @@ public class FormSecurityAnalisis extends javax.swing.JFrame {
         jLabel7.setText("jLabel7");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Analisa");
+        setTitle("Analysis");
 
         panelYellow1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -109,8 +109,8 @@ public class FormSecurityAnalisis extends javax.swing.JFrame {
 
         jlblGbrPlain.setForeground(new java.awt.Color(255, 255, 255));
         jlblGbrPlain.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblGbrPlain.setText("- Browse Gambarnya -");
-        jlblGbrPlain.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblGbrPlain.setText("- Browse Image -");
+        jlblGbrPlain.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         panelYellow1.add(jlblGbrPlain, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 202, 240));
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -118,24 +118,24 @@ public class FormSecurityAnalisis extends javax.swing.JFrame {
 
         jlblGbrCipher.setForeground(new java.awt.Color(255, 255, 255));
         jlblGbrCipher.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlblGbrCipher.setText("- Browse Gambarnya-");
-        jlblGbrCipher.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jlblGbrCipher.setText("- Browse Image -");
+        jlblGbrCipher.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         panelYellow1.add(jlblGbrCipher, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 210, 240));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("PLAIN");
         panelYellow1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 90, 30));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("CIPHER");
         panelYellow1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 90, 30));
 
         btnRunAnalysis.setForeground(new java.awt.Color(255, 255, 255));
-        btnRunAnalysis.setText("Jalankan Analisa");
+        btnRunAnalysis.setText("Run Analysis");
         btnRunAnalysis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRunAnalysisActionPerformed(evt);
@@ -143,26 +143,26 @@ public class FormSecurityAnalisis extends javax.swing.JFrame {
         });
 
         btnTutup.setForeground(new java.awt.Color(255, 255, 255));
-        btnTutup.setText("Tutup");
+        btnTutup.setText("Close");
         btnTutup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTutupActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Information Entropy");
 
-        jlblEntropy.setFont(new java.awt.Font("Tahoma", 0, 24));
+        jlblEntropy.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jlblEntropy.setForeground(new java.awt.Color(255, 255, 0));
         jlblEntropy.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jlblEntropy.setText("0");
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Koefisien Korelasi");
+        jLabel2.setText("Correlation Coeficient");
 
         jlblPlainHoriz.setForeground(new java.awt.Color(255, 255, 255));
         jlblPlainHoriz.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -236,18 +236,19 @@ public class FormSecurityAnalisis extends javax.swing.JFrame {
                     .addComponent(jlblCipherHoriz, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jlblCipherDiag, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelYellow2Layout.createSequentialGroup()
-                .addContainerGap(119, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(123, 123, 123))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelYellow2Layout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110))
             .addGroup(panelYellow2Layout.createSequentialGroup()
                 .addGap(147, 147, 147)
                 .addComponent(jlblEntropy, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(162, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelYellow2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelYellow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelYellow2Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(123, 123, 123))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelYellow2Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(110, 110, 110))))
         );
         panelYellow2Layout.setVerticalGroup(
             panelYellow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
