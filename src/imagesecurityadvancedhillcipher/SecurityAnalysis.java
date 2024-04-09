@@ -33,6 +33,7 @@ public class SecurityAnalysis {
         width = bmpOri.getWidth();
         height = bmpOri.getHeight();
         
+        
     }
     
     private int[][] countFrequency()
@@ -126,28 +127,30 @@ public class SecurityAnalysis {
 
         for(int i=0;i<range;i++){            
           
-            if(sample.equals("horizontal")){
-            int w1 = rand.nextInt(width);
-            int h1 = rand.nextInt(height-1);
-                
-            x[i] = pxl[h1][w1];
-            y[i] = pxl[h1][w1+1];            
+            if(sample.equals("horizontal"))
+            {
+                int w1 = rand.nextInt(width-1) ;
+                int h1 = rand.nextInt(height);
+
+                x[i] = pxl[h1][w1];
+                y[i] = pxl[h1][w1+1];            
 
             }
-            else if(sample.equals("vertical")){
-            int w1 = rand.nextInt(width-1);
-            int h1 = rand.nextInt(height);
-                
-            x[i] = pxl[h1][w1];
-            y[i] = pxl[h1+1][w1];    
+            else if(sample.equals("vertical"))
+            {
+                int w1 = rand.nextInt(width);
+                int h1 = rand.nextInt(height - 1);
+
+                x[i] = pxl[h1][w1];
+                y[i] = pxl[h1+1][w1];    
             
             }
             else{
-            int w1 = rand.nextInt(width-1);
-            int h1 = rand.nextInt(height-1);
+                int w1 = rand.nextInt(width-1);
+                int h1 = rand.nextInt(height-1);
 
-            x[i] = pxl[h1][w1];
-            y[i] = pxl[h1+1][w1+1];                       
+                x[i] = pxl[h1][w1];
+                y[i] = pxl[h1+1][w1+1];                       
             }
             totalX += x[i];
             totalY += y[i];
